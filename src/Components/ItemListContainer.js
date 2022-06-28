@@ -1,9 +1,15 @@
 import React from "react";
+import ItemCount from "./ItemCount";
 
 const ItemListContainer = (props) => {
+  let onAdd = (quantity) => {
+    console.log(`Felicidades, compraste ${quantity} productos`);
+  };
   return (
     <>
-      <li style={{ "list-style": "none" }}>{props.product}</li>
+      <li style={{ listStyle: "none" }}>{props.product}</li>
+      <br />
+      <ItemCount stock={5} initial={-1} onAdd={onAdd} />
     </>
   );
 };
