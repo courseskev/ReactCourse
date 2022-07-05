@@ -3,12 +3,12 @@ import NavBar from "./Components/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ItemListContainer from "./Components/ItemListContainer";
 
+const saludo = "Listado de productos";
 function App() {
-  const catalog = ["product 1", "product 2", "product 3"];
   return (
     <>
       <NavBar />
-      <ItemListContainer product={catalog} />
+      <ItemListContainer mensajeTitulo={saludo} />
     </>
   );
 }
