@@ -9,7 +9,7 @@ const ItemListContainer = (props) => {
     <>
       <li style={{ listStyle: "none" }}>{props.product}</li>
       <br />
-      <ItemCount stock={5} initial={-1} onAdd={onAdd} />
+      <ItemCount stock={5} initial={2} onAdd={onAdd} />
     </>
   );
 };
